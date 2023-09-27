@@ -3,9 +3,31 @@ body {
 }
 
 .header {
-  background-color: #3498db;
+  background-color: #c86579;
   color: white;
   padding: 1rem;
 }
+
+
+body header {
+
+  position: sticky;
+  top: 0;
+}
+
+
+
+.products {
+  display: grid;
+  grid-template-columns: 1fr.1fr.1fr;
+  grid-template-rows: auto;
+  grid-template-areas: 
+    "header header header header"
+    "main main . sidebar"
+    "footer footer footer footer";
+}
+
+
+
 
 /*# sourceMappingURL=style.css.map */
