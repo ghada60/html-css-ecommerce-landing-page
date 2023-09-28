@@ -1,33 +1,81 @@
 body {
+  font: 100% Helvetica, sans-serif;
+  color: #3412f2;
+}
+
+body {
   font-family: Arial, sans-serif;
 }
 
 .header {
   background-color: #c86579;
-  color: white;
+  color: base;
   padding: 1rem;
 }
 
-
 body header {
-
   position: sticky;
   top: 0;
 }
 
-
-
 .products {
   display: grid;
-  grid-template-columns: 1fr.1fr.1fr;
+  grid-template-columns: 1fr 0.1fr 0.1fr;
   grid-template-rows: auto;
-  grid-template-areas: 
-    "header header header header"
-    "main main . sidebar"
-    "footer footer footer footer";
+  grid-template-areas: "header header header header" "main main . sidebar" "footer footer footer footer";
 }
 
+.products {
+  display: flex;
+  flex-direction: column; /* or inline-flex */
+}
 
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+nav li {
+  display: inline-block;
+}
+nav a {
+  display: block;
+  padding: 6px 12px;
+  text-decoration: none;
+}
 
+#btt {
+  color: #3412f2;
+}
+
+h2 {
+  position: relative;
+  font-size: 5em;
+  color: rgb(199, 255, 110);
+  text-transform: uppercase;
+  border-bottom: 10px solid #ffffff;
+  line-height: initial;
+}
+
+h2::before {
+  content: attr(loading-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  color: #b0a8e2;
+  overflow: hidden;
+  border-bottom: 10px solid #b0a8e2;
+  animation: loading 5s linear infinite;
+}
+
+@keyframes loading {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */

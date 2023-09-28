@@ -5,8 +5,7 @@
   "main": "index.js",
   "scripts": {
     "sass:watch": "sass --watch src/styles/style.scss dist/style.css"
-  }
-  ,
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Integrify-Finland/html-css-ecommerce-landing-page.git"
@@ -19,6 +18,9 @@
   },
   "homepage": "https://github.com/Integrify-Finland/html-css-ecommerce-landing-page#readme",
   "devDependencies": {
-    "sass": "^1.66.1"
+    "sass": "^1.68.0"
+  },
+  "dependencies": {
+    "global": "^4.4.0"
   }
 }
